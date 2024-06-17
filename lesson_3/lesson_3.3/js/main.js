@@ -30,3 +30,15 @@ while (temp > 0) {
   temp = Math.floor(temp / 10);
 }
 console.log(result);
+
+//Option 4
+const number = 10369;
+let temp = number;
+let result = "";
+let array = [10000, 1000, 100, 10, 1];
+for (let i = 0; i < array.length; i++) {
+  digit = Math.floor(temp / array[i]);
+  result = result + " " + digit;
+  temp = temp - array[i] * digit;
+}
+console.log(result);
