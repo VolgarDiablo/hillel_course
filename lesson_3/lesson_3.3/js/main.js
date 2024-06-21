@@ -3,37 +3,37 @@
 //1 0 3 6 9
 
 //Option 1
-const number = 10369;
+// const test = 10369;
 
-let string = number.toString();
-let newString = string[0];
+// let string = test.toString();
+// let newString = "";
 
-console.log(string.length);
-for (let i = 1; i < string.length; i++) {
-  newString = newString + " " + string[i];
-}
-console.log(newString);
+// console.log(string.length);
+// for (let i = 0; i < string.length; i++) {
+//   newString = newString + " " + string[i];
+// }
+// console.log(newString);
 
 // Option 2
-const number = 10369;
-const stringNumber = number.toString();
-const digitsArray = stringNumber.split("").join(" ");
-console.log(digitsArray);
+// const example = "10-03-69";
+// const stringNumber = test.toString();
+// const digitsArray = stringNumber.split("-").join(" ");
+// console.log(digitsArray);
 
 //Option 3
-const number = 10369;
-let temp = number;
-let result = "";
-while (temp > 0) {
-  const digit = temp % 10;
-  result = digit + " " + result;
-  temp = Math.floor(temp / 10);
-}
-console.log(result);
+// const test = 10369;
+// let temp = test;
+// let result = "";
+// while (temp > 0) {
+//   const digit = temp % 10;
+//   result = digit + " " + result;
+//   temp = Math.floor(temp / 10);
+// }
+// console.log(result);
 
 //Option 4
-const number = 10369;
-let temp = number;
+const test = 10369;
+let temp = test;
 let result = "";
 let array = [10000, 1000, 100, 10, 1];
 for (let i = 0; i < array.length; i++) {
