@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <form id="form" action="POST">
+      <div class="modal-overlay">
+        <div class="modal">
+          <h2>We would like to help you</h2>
+
+          <div class="error-message" id="name-error">Invalid name.</div>
+          <input id="name" type="text" placeholder="Name" required />
+
+          <div class="error-message" id="message-error">
+            Please enter a message.
+          </div>
+          <textarea
+            id="smthText"
+            placeholder="Message"
+            minlength="5"
+          ></textarea>
+
+          <div class="error-message" id="phone-error">
+            Invalid phone number.
+          </div>
+          <input
+            id="phoneInput"
+            type="tel"
+            placeholder="Phone number"
+            required
+          />
+
+          <div class="error-message" id="email-error">
+            Invalid email address.
+          </div>
+          <input id="emailInput" type="text" placeholder="Email" required />
+
+          <button id="btnSendMsg">Send message</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
