@@ -23,6 +23,7 @@
             id="smthText"
             placeholder="Message"
             minlength="5"
+            required
           ></textarea>
 
           <div class="error-message" id="phone-error">
@@ -38,7 +39,12 @@
           <div class="error-message" id="email-error">
             Invalid email address.
           </div>
-          <input id="emailInput" type="text" placeholder="Email" required />
+          <input
+            id="emailInput"
+            type="text"
+            placeholder="example@gmail.com"
+            required
+          />
 
           <button id="btnSendMsg">Send message</button>
         </div>
