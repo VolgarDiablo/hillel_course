@@ -62,7 +62,7 @@
 }
 
 .error-message {
-  display: block;
+  display: none;
   text-align: start;
   color: red;
   font-size: 14px;
