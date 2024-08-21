@@ -1,19 +1,26 @@
 class BankAccount {
+  #balance;
+
   constructor(balance) {
-    this.balance = balance;
+    this.#balance = balance;
   }
 
   getBalance() {
-    console.log(this.balance);
+    return this.#balance;
   }
+
   deposit(amount) {
-    this.balance += amount;
+    if (amount > 0) {
+      this.#balance += amount;
+    } else {
+      console.log("The deposit amount must be greater than 0");
+    }
   }
 
   withdraw(amount) {
     if (amount > 0) {
-      if (amount <= this.balance) {
-        this.balance -= amount;
+      if (amount <= this.#balance) {
+        this.#balance -= amount;
       } else {
         console.log("There are insufficient funds in the account");
       }
