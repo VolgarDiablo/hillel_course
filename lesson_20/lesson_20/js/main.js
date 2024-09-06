@@ -1,4 +1,4 @@
-// Функция для динамического добавления скриптов
+// Function for dynamically adding scripts
 function loadScript(url, callback) {
   const script = document.createElement("script");
   script.src = url;
@@ -6,11 +6,11 @@ function loadScript(url, callback) {
   document.body.appendChild(script);
 }
 
-// Подключаем jQuery, затем инициализируем Slick Slider
+// We include jQuery, then initialize Slick Slider
 loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
-  // Подключаем Slick Slider после загрузки jQuery
+  //Connecting Slick Slider After Loading jQuery
   loadScript("node_modules/slick-carousel/slick/slick.min.js", function () {
-    // Инициализация слайдера
+    // Initializing the slider
     $(document).ready(function () {
       $(".your-slider-class").slick({
         slidesToShow: 1,
@@ -22,19 +22,19 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
   });
 });
 
-// Инициализация карты Leaflet
+// Initializing a Leaflet Map
 document.addEventListener("DOMContentLoaded", function () {
   const map = L.map("map").setView([48.46475, 35.0462], 13);
 
-  // Добавляем слой карты OpenStreetMap
+  // Adding an OpenStreetMap layer
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 
-  // Добавляем маркер на карту
+  // Adding a marker to the map
   const marker = L.marker([48.4647, 35.0462]).addTo(map);
 
-  // Привязываем всплывающее окно к маркеру
+  // Attaching a pop-up window to a marker
   marker.bindPopup("Dnipro, Ukraine").openPopup();
 });
