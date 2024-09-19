@@ -6,13 +6,13 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #87CEEB;
+  background-color: #87ceeb;
   color: #fff;
   text-align: center;
   padding: 20px;
 }
 .widget {
-  background-color: #4A90E2;
+  background-color: #4a90e2;
   padding: 20px;
   border-radius: 10px;
   display: inline-block;
@@ -28,7 +28,7 @@ body {
 .update-btn {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #FFD700;
+  background-color: #ffd700;
   color: #000;
   border: none;
   border-radius: 5px;
@@ -36,5 +36,5 @@ body {
   font-size: 1em;
 }
 .update-btn:hover {
-  background-color: #FFA500;
+  background-color: #ffa500;
 }
