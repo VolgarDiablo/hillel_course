@@ -7,9 +7,7 @@ let authorNames = [];
 async function loadData() {
   try {
     const [messageData, descriptionData, authorData] = await Promise.all([
-      fetch("./js/photo-message.json").then((response) => response.json()),
-      fetch("./js/photo-description.json").then((response) => response.json()),
-      fetch("./js/photo-name-author.json").then((response) => response.json()),
+      fetch("./js/constans.json").then((response) => response.json()),
     ]);
 
     messagePhotos = messageData.commentsMessages;
