@@ -17,7 +17,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "./src/js/*.json", to: "./js/[name][ext]" },
+        { from: "./src/js", to: "./js" },
         { from: "./src/css", to: "./css" },
         { from: "./src/img", to: "./img" },
         // { from: "./src/fonts", to: "./fonts" },
