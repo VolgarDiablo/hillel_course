@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import { getRandomNumber, getRandomArrayItem } from "./utility.js";
 
 let messagePhotos = [];
 let descriptions = [];
@@ -9,7 +10,6 @@ async function loadData() {
     const data = await fetch("./js/constants.json").then((response) =>
       response.json()
     );
-
     messagePhotos = data.commentsMessages;
     descriptions = data.photoDescriptions;
     authorNames = data.authorNames;
@@ -20,9 +20,6 @@ async function loadData() {
   }
 }
 
-const getRandomNumber = (min, max) =>
-  Math.floor(Math.random() * (max - min)) + min;
-
 function createComment() {
   return {
     id: uuidv4(),
@@ -32,24 +29,15 @@ function createComment() {
   };
 }
 
-function getRandomArrayItem(array) {
-  return array[getRandomNumber(0, array.length)];
-}
-
 function createPhotoObject() {
-  const photos = [];
-
-  for (let i = 1; i <= 25; i++) {
-    photos.push({
-      id: i,
-      url: `photos/${i}.jpg`,
-      description: descriptions[getRandomNumber(0, descriptions.length)],
+  return Array(25)
+    .fill()
+    .map((_, index) => ({
+      id: index + 1,
+      url: `photos/${index + 1}.jpg`,
+      description: getRandomArrayItem(descriptions),
       likes: getRandomNumber(15, 200),
       comments: [createComment()],
-    });
-  }
-
-  return photos;
+    }));
 }
-
 loadData();
