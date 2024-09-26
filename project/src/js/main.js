@@ -1,6 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 import { getRandomNumber, getRandomArrayItem } from "./utility.js";
+import { renderPicture, renderOnePicture } from "./render-picture.js";
 
+let generatedPhotos = [];
 let messagePhotos = [];
 let descriptions = [];
 let authorNames = [];
@@ -14,7 +16,11 @@ async function loadData() {
     descriptions = data.photoDescriptions;
     authorNames = data.authorNames;
 
-    console.log(createPhotoObject());
+    generatedPhotos = createPhotoObject();
+
+    renderOnePicture(generatedPhotos[0]);
+
+    renderPicture(generatedPhotos);
   } catch (error) {
     console.error("Ошибка при загрузке JSON:", error);
   }
