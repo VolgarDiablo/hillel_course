@@ -7,9 +7,11 @@ let authorNames = [];
 
 async function loadData() {
   try {
+
     const data = await fetch("./js/constants.json").then((response) =>
       response.json()
     );
+
 
     messagePhotos = data.commentsMessages;
     descriptions = data.photoDescriptions;
