@@ -6,13 +6,13 @@ let authorNames = [];
 
 async function loadData() {
   try {
-    const [messageData, descriptionData, authorData] = await Promise.all([
-      fetch("./js/constans.json").then((response) => response.json()),
-    ]);
+    const data = await fetch("./js/constants.json").then((response) =>
+      response.json()
+    );
 
-    messagePhotos = messageData.commentsMessages;
-    descriptions = descriptionData.photoDescriptions;
-    authorNames = authorData.authorNames;
+    messagePhotos = data.commentsMessages;
+    descriptions = data.photoDescriptions;
+    authorNames = data.authorNames;
 
     console.log(createPhotoObject());
   } catch (error) {
