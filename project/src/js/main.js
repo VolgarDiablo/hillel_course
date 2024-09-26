@@ -10,7 +10,6 @@ async function loadData() {
     const data = await fetch("./js/constants.json").then((response) =>
       response.json()
     );
-
     messagePhotos = data.commentsMessages;
     descriptions = data.photoDescriptions;
     authorNames = data.authorNames;
