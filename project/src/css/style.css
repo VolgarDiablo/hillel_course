@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSansCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSansCondensed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #232321;
+}
+
+main {
+  position: relative;
+}
+
+.content-box-component {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.container {
+  width: 1360px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.pictures {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.picture {
+  position: relative;
+  line-height: 0;
+}
+
+.picture__img {
+  max-width: auto;
+  width: 100%;
+  height: auto;
+}
+
+.picture__info {
+  display: none;
+
+  margin: 0;
+  padding: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.picture:hover .picture__info,
+.picture:focus .picture__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.picture__comments,
+.picture__likes {
+  padding-left: 30px;
+  position: relative;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.picture__comments {
+  margin-right: 10px;
+}
+
+.picture__comments::before,
+.picture__likes::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -7px;
+
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.picture__comments::before {
+  width: 20px;
+  height: 16px;
+
+  background-position: -5px -5px;
+}
+
+.picture__likes::before {
+  width: 20px;
+  height: 16px;
+
+  background-position: -5px -31px;
+}
