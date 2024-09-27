@@ -1,5 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
-import { getRandomNumber, getRandomArrayItem } from "./utility.js";
+import {
+  getRandomNumber,
+  getRandomArrayItem,
+  getRandomArrayComments,
+} from "./utility.js";
 import { renderPicture, renderOnePicture } from "./render-picture.js";
 
 let generatedPhotos = [];
@@ -18,8 +22,6 @@ async function loadData() {
 
     generatedPhotos = createPhotoObject();
 
-    renderOnePicture(generatedPhotos[0]);
-
     renderPicture(generatedPhotos);
   } catch (error) {
     console.error("Ошибка при загрузке JSON:", error);
@@ -30,7 +32,7 @@ function createComment() {
   return {
     id: uuidv4(),
     avatar: `img/avatar-${getRandomNumber(1, 6)}.svg`,
-    message: getRandomArrayItem(messagePhotos),
+    message: getRandomArrayComments(messagePhotos),
     name: getRandomArrayItem(authorNames),
   };
 }

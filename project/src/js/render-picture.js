@@ -1,6 +1,5 @@
 const sectionRenderPhoto = document.querySelector(".pictures");
 
-// Шаблон как HTML строка
 const pictureTemplate = `        
   <a href="#" class="picture">
     <img
@@ -24,7 +23,7 @@ function createPictureElement(photo) {
   pictureElement.querySelector(".picture__img").src = photo.url;
   pictureElement.querySelector(".picture__likes").textContent = photo.likes;
   pictureElement.querySelector(".picture__comments").textContent =
-    photo.comments.length;
+    photo.comments[0].message.length;
 
   return pictureElement;
 }
