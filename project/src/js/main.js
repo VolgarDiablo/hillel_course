@@ -5,6 +5,9 @@ import {
   getRandomArrayComments,
 } from "./utility.js";
 import { renderPicture, renderOnePicture } from "./render-picture.js";
+import { renderBigPicture } from "./render-big-picture.js";
+
+const picture = document.querySelector(".pictures");
 
 let generatedPhotos = [];
 let messagePhotos = [];
@@ -16,6 +19,7 @@ async function loadData() {
     const data = await fetch("./js/constants.json").then((response) =>
       response.json()
     );
+
     messagePhotos = data.commentsMessages;
     descriptions = data.photoDescriptions;
     authorNames = data.authorNames;
@@ -49,3 +53,11 @@ function createPhotoObject() {
     }));
 }
 loadData();
+
+picture.addEventListener("click", (e) => {
+  const id = +e.target.dataset.id;
+  if (isNaN(id)) {
+    return;
+  }
+  renderBigPicture(id, generatedPhotos);
+});

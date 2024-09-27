@@ -11,6 +11,75 @@
   <body>
     <main>
       <section class="pictures container"></section>
+
+      <section class="big-picture overlay hidden" id="big-picture">
+        <h2 class="big-picture__title visually-hidden">Перегляд фотографії</h2>
+        <div class="big-picture__preview">
+          <!-- Перегляд зображення -->
+          <div class="big-picture__img">
+            <img src="" alt="" width="600" height="600" />
+          </div>
+
+          <!-- Інформація про зображення. Підпис, коментарі, кількість лайків -->
+          <div class="big-picture__social social">
+            <div class="social__header">
+              <img
+                class="social__picture"
+                src="img/avatar-1.svg"
+                alt="Аватар автора фотографии"
+                width="35"
+                height="35"
+              />
+              <p class="social__caption">Тестим новую камеру! =)</p>
+              <p class="social__likes">
+                Подобається <span class="likes-count"></span>
+              </p>
+            </div>
+
+            <!-- Коментарі до зображення-->
+            <div class="social__comment-count">
+              5 з <span class="comments-count"></span> комментарів
+            </div>
+            <ul class="social__comments"></ul>
+
+            <!-- Кнопка для завантаження нової порції коментарів -->
+            <button
+              type="button"
+              class="social__comments-loader comments-loader"
+            >
+              Завантажити ще
+            </button>
+
+            <!-- Форма для відправки коментаря -->
+            <div class="social__footer">
+              <img
+                class="social__picture"
+                src="img/avatar-6.svg"
+                alt="Аватар комментатора фотографии"
+                width="35"
+                height="35"
+              />
+              <input
+                type="text"
+                class="social__footer-text"
+                placeholder="Ваш комментарий..."
+              />
+              <button type="button" class="social__footer-btn" name="button">
+                Відправити
+              </button>
+            </div>
+          </div>
+
+          <!-- Кнопка для виходу із повноекранного перегляду зображення -->
+          <button
+            type="reset"
+            class="big-picture__cancel cancel"
+            id="picture-cancel"
+          >
+            Закрити
+          </button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
