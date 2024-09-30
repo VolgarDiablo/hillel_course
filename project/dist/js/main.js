@@ -1,6 +1,13 @@
 import { v4 as uuidv4 } from "uuid";
-import { getRandomNumber, getRandomArrayItem } from "./utility.js";
+import {
+  getRandomNumber,
+  getRandomArrayItem,
+  getRandomArrayComments,
+} from "./utility.js";
 import { renderPicture, renderOnePicture } from "./render-picture.js";
+import { showBigPicture } from "./big-picture.js";
+
+const picture = document.querySelector(".pictures");
 
 let generatedPhotos = [];
 let messagePhotos = [];
@@ -12,13 +19,12 @@ async function loadData() {
     const data = await fetch("./js/constants.json").then((response) =>
       response.json()
     );
+
     messagePhotos = data.commentsMessages;
     descriptions = data.photoDescriptions;
     authorNames = data.authorNames;
 
     generatedPhotos = createPhotoObject();
-
-    renderOnePicture(generatedPhotos[0]);
 
     renderPicture(generatedPhotos);
   } catch (error) {
@@ -30,7 +36,7 @@ function createComment() {
   return {
     id: uuidv4(),
     avatar: `img/avatar-${getRandomNumber(1, 6)}.svg`,
-    message: getRandomArrayItem(messagePhotos),
+    message: getRandomArrayComments(messagePhotos),
     name: getRandomArrayItem(authorNames),
   };
 }
@@ -47,3 +53,8 @@ function createPhotoObject() {
     }));
 }
 loadData();
+
+picture.addEventListener("click", (e) => {
+  const id = +e.target.dataset.id;
+  showBigPicture(id);
+});
