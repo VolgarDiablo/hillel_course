@@ -3,9 +3,10 @@ import {
   getRandomNumber,
   getRandomArrayItem,
   getRandomArrayComments,
-} from "./utility.js";
+} from "./util.js";
 import { renderPicture, renderOnePicture } from "./render-picture.js";
 import { renderBigPicture } from "./render-big-picture.js";
+import { uploadFile } from "./upload-file.js";
 
 const picture = document.querySelector(".pictures");
 
@@ -61,3 +62,16 @@ picture.addEventListener("click", (e) => {
   }
   renderBigPicture(id, generatedPhotos);
 });
+
+document.getElementById("upload-file").onchange = function () {
+  const file = document.getElementById("upload-file").files[0];
+  if (file) {
+    const typeUploadFile = file.type;
+
+    if (typeUploadFile.startsWith("image/")) {
+      uploadFile(file);
+    } else {
+      alert("Please upload an image file");
+    }
+  }
+};
