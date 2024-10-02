@@ -3,9 +3,10 @@ import {
   getRandomNumber,
   getRandomArrayItem,
   getRandomArrayComments,
-} from "./utility.js";
+} from "./util.js";
 import { renderPicture, renderOnePicture } from "./render-picture.js";
-import { showBigPicture } from "./big-picture.js";
+import { renderBigPicture } from "./render-big-picture.js";
+import { uploadFile } from "./upload-file.js";
 
 const picture = document.querySelector(".pictures");
 
@@ -56,5 +57,19 @@ loadData();
 
 picture.addEventListener("click", (e) => {
   const id = +e.target.dataset.id;
-  showBigPicture(id);
+  if (isNaN(id)) {
+    return;
+  }
+  renderBigPicture(id, generatedPhotos);
 });
+
+document.getElementById("upload-file").onchange = function () {
+  const file = document.getElementById("upload-file").files[0];
+  const typeUploadFile = file.type;
+
+  if (typeUploadFile.startsWith("image/")) {
+    uploadFile(file);
+  } else {
+    alert("Please upload an image file");
+  }
+};

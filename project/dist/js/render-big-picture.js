@@ -65,6 +65,7 @@ function setDataImg(photoData) {
   commentsCount.textContent = photoData.comments[0].message.length;
 
   const infoCommentsCount = document.querySelector(".social__comment-count");
+  infoCommentsCount.style.display = "none";
 
   renderComments(photoData);
 }
@@ -74,7 +75,7 @@ function renderComments(photoData) {
   commentsList.innerHTML = "";
 
   const commentElements = createComments(photoData.comments[0]);
-  console.log(commentElements[0]);
+
   commentsList.append(...commentElements);
 }
 
