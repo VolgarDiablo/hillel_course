@@ -48,11 +48,13 @@ function validateInputHashTags() {
   const valueHashTag = hashTags.value.trim().toLowerCase();
   const tags = valueHashTag.split(" ");
   const hashtagPattern = /^#[a-zA-Zа-яА-Я0-9]+$/;
+  const tagsMaxCount = 5;
+  const oneTagMaxLength = 20;
 
   const uniqueTags = new Set();
   let errorMessage = "";
 
-  if (tags.length > 5) {
+  if (tags.length > tagsMaxCount) {
     errorMessage = "You cannot specify more than five hashtags.";
   } else {
     for (let tag of tags) {
@@ -64,7 +66,7 @@ function validateInputHashTags() {
         errorMessage = "A hashtag cannot consist of only one character #.";
         break;
       }
-      if (tag.length > 20) {
+      if (tag.length > oneTagMaxLength) {
         errorMessage = "The maximum length of one hashtag is 20 characters.";
         break;
       }
