@@ -1,5 +1,6 @@
 const bigPicture = document.querySelector("#big-picture");
 const btnCloseBigPicture = document.querySelector("#picture-cancel");
+const btnLoadMoreComments = document.querySelector(".social__comments-loader");
 
 const commentTemplate = `
 <li class="social__comment">
@@ -64,8 +65,6 @@ function setDataImg(photoData) {
   likesCount.textContent = photoData.likes;
   commentsCount.textContent = photoData.comments[0].message.length;
 
-  const infoCommentsCount = document.querySelector(".social__comment-count");
-
   renderComments(photoData);
 }
 
@@ -74,12 +73,12 @@ function renderComments(photoData) {
   commentsList.innerHTML = "";
 
   const commentElements = createComments(photoData.comments[0]);
-  console.log(commentElements[0]);
+
   commentsList.append(...commentElements);
 }
 
-function createComments(comment) {
-  const commentElements = comment.message.map((messageText) => {
+function createComments(comments) {
+  return comments.map((comment) => {
     const tempDiv = document.createElement("div");
     tempDiv.innerHTML = commentTemplate.trim();
     const commentElement = tempDiv.firstChild;
@@ -90,10 +89,8 @@ function createComments(comment) {
     imgElement.src = comment.avatar;
     imgElement.alt = comment.name;
 
-    commentText.textContent = messageText;
+    commentText.textContent = comment.message;
 
     return commentElement;
   });
-
-  return commentElements;
 }
