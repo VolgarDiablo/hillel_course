@@ -1,18 +1,6 @@
 const bigPicture = document.querySelector("#big-picture");
 const btnCloseBigPicture = document.querySelector("#picture-cancel");
-
-const commentTemplate = `
-<li class="social__comment">
-  <img
-    class="social__picture"
-    src=""
-    alt=""
-    width="35"
-    height="35"
-  />
-  <p class="social__text">
-  </p>
-</li>`;
+const btnLoadMoreComments = document.querySelector(".social__comments-loader");
 
 export function renderBigPicture(id, photos) {
   const focusedElement = document.querySelector(".picture:focus");
@@ -62,39 +50,34 @@ function setDataImg(photoData) {
 
   bigPictureImg.src = photoData.url;
   likesCount.textContent = photoData.likes;
-  commentsCount.textContent = photoData.comments[0].message.length;
+  commentsCount.textContent = photoData.comments.length;
 
-  const infoCommentsCount = document.querySelector(".social__comment-count");
-  infoCommentsCount.style.display = "none";
-
-  renderComments(photoData);
+  renderComments(photoData.comments);
 }
 
-function renderComments(photoData) {
+function renderComments(comments) {
   const commentsList = bigPicture.querySelector(".social__comments");
   commentsList.innerHTML = "";
 
-  const commentElements = createComments(photoData.comments[0]);
-
+  const commentElements = comments.map(createCommentElement);
   commentsList.append(...commentElements);
 }
 
-function createComments(comment) {
-  const commentElements = comment.message.map((messageText) => {
-    const tempDiv = document.createElement("div");
-    tempDiv.innerHTML = commentTemplate.trim();
-    const commentElement = tempDiv.firstChild;
+function createCommentElement(comment) {
+  const li = document.createElement("li");
+  li.classList.add("social__comment");
 
-    const imgElement = commentElement.querySelector(".social__picture");
-    const commentText = commentElement.querySelector(".social__text");
+  const img = document.createElement("img");
+  img.classList.add("social__picture");
+  img.src = comment.avatar;
+  img.alt = comment.name;
+  img.width = 35;
+  img.height = 35;
 
-    imgElement.src = comment.avatar;
-    imgElement.alt = comment.name;
+  const p = document.createElement("p");
+  p.classList.add("social__text");
+  p.textContent = comment.message;
 
-    commentText.textContent = messageText;
-
-    return commentElement;
-  });
-
-  return commentElements;
+  li.append(img, p);
+  return li;
 }

@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
   <script defer src="bundle.js"></script></head>
   <body>
     <main>
@@ -24,7 +25,6 @@
               enctype="multipart/form-data"
               autocomplete="off"
               action="https://23.javascript.pages.academy/kekstagram"
-              autocomplete="off "
             >
               <!-- Початковий стан поля для завантаження зображення-->
               <fieldset class="img-upload__start">
@@ -207,7 +207,6 @@
                       class="text__hashtags"
                       name="hashtags"
                       placeholder="#ХэшТег"
-                      required
                     />
                     <textarea
                       class="text__description"
@@ -258,7 +257,8 @@
 
             <!-- Коментарі до зображення-->
             <div class="social__comment-count">
-              5 з <span class="comments-count"></span> комментарів
+              <span id="currentCountComments"></span> з
+              <span class="comments-count"></span> комментарів
             </div>
             <ul class="social__comments"></ul>
 

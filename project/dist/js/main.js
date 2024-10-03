@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+
 import {
   getRandomNumber,
   getRandomArrayItem,
@@ -65,11 +66,13 @@ picture.addEventListener("click", (e) => {
 
 document.getElementById("upload-file").onchange = function () {
   const file = document.getElementById("upload-file").files[0];
-  const typeUploadFile = file.type;
+  if (file) {
+    const typeUploadFile = file.type;
 
-  if (typeUploadFile.startsWith("image/")) {
-    uploadFile(file);
-  } else {
-    alert("Please upload an image file");
+    if (typeUploadFile.startsWith("image/")) {
+      uploadFile(file);
+    } else {
+      alert("Please upload an image file");
+    }
   }
 };
