@@ -41,8 +41,8 @@ function closeBigPicture() {
   document.body.classList.remove("modal-open");
 
   currentScale = 100;
-  scaleValueInput.value = "100%";
-  scaleValueInput.setAttribute("value", "100%");
+  scaleValueInput.value = `${currentScale}%`;
+  scaleValueInput.setAttribute("value", `${currentScale}%`);
   image.style.transform = `scale(${1})`;
 }
 
