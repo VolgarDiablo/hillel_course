@@ -3,6 +3,12 @@ const btnUploadCancel = document.querySelector("#upload-cancel");
 const hashTags = document.getElementsByName("hashtags")[0];
 const form = document.querySelector("#upload-select-image");
 const btnUploadSubmit = document.querySelector("#upload-submit");
+const smallerButton = document.querySelector(".scale__control--smaller");
+const biggerButton = document.querySelector(".scale__control--bigger");
+const scaleValueInput = document.querySelector(".scale__control--value");
+const image = document.querySelector(".img-upload__preview");
+
+let currentScale = 100;
 
 export function uploadFile(file) {
   showBigPicture();
@@ -33,6 +39,36 @@ document.addEventListener("keydown", (event) => {
 function closeBigPicture() {
   imgUploadOverlay.classList.add("hidden");
   document.body.classList.remove("modal-open");
+
+  currentScale = 100;
+  scaleValueInput.value = "100%";
+  scaleValueInput.setAttribute("value", "100%");
+  image.style.transform = `scale(${1})`;
+}
+
+smallerButton.addEventListener("click", () => {
+  if (currentScale > 25) {
+    currentScale -= 25;
+    updateScaleValue();
+  }
+});
+
+biggerButton.addEventListener("click", () => {
+  if (currentScale < 100) {
+    currentScale += 25;
+    updateScaleValue();
+  }
+});
+
+function updateScaleValue() {
+  const newValue = `${currentScale}%`;
+  scaleValueInput.value = newValue;
+  scaleValueInput.setAttribute("value", newValue);
+  updateImageScale(currentScale);
+}
+
+function updateImageScale(scale) {
+  image.style.transform = `scale(${scale / 100})`;
 }
 
 function isHasFocusInput() {
