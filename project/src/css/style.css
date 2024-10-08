@@ -665,6 +665,9 @@ main {
   filter: brightness(3);
 }
 
+.effects__radio:checked:not([value="none"]) ~ .effect-level__slider {
+  display: block;
+}
 /**
    * Блок добавления хэштегов и комментария к изображению
    */
