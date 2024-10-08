@@ -134,6 +134,10 @@ main {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  gap: 20px;
+
+  align-items: center;
 }
 
 .img-filters--inactive {

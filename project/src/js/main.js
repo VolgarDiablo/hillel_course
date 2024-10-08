@@ -9,7 +9,8 @@ import { renderPicture, renderOnePicture } from "./render-picture.js";
 import { renderBigPicture } from "./render-big-picture.js";
 import { uploadFile } from "./upload-file.js";
 
-const picture = document.querySelector(".pictures");
+const sectionPictures = document.querySelector(".pictures");
+const imgFiltersForm = document.querySelector(".img-filters__form");
 
 let generatedPhotos = [];
 let messagePhotos = [];
@@ -54,9 +55,75 @@ function createPhotoObject() {
       comments: [createComment()],
     }));
 }
+
 loadData();
 
-picture.addEventListener("click", (e) => {
+function debounce(func, delay) {
+  let timeout;
+  return function (...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, delay);
+  };
+}
+
+function getRandomPhotos(count) {
+  return [...generatedPhotos].sort(() => Math.random() - 0.5).slice(0, count);
+}
+
+function filterByComments() {
+  return [...generatedPhotos].sort(
+    (a, b) => b.comments[0].message.length - a.comments[0].message.length
+  );
+}
+
+function applyFilter(filterType) {
+  const pictures = sectionPictures.querySelectorAll(".picture");
+  let filteredPhotos = [];
+
+  pictures.forEach((picture) => {
+    picture.remove();
+  });
+
+  switch (filterType) {
+    case "filter-random":
+      filteredPhotos = getRandomPhotos(10);
+      break;
+    case "filter-discussed":
+      filteredPhotos = filterByComments();
+      break;
+    default:
+      filteredPhotos = generatedPhotos;
+      break;
+  }
+
+  renderPicture(filteredPhotos);
+}
+
+imgFiltersForm.addEventListener(
+  "click",
+  debounce((e) => {
+    const target = e.target;
+    const previousActiveButton = document.querySelector(
+      ".img-filters__button--active"
+    );
+
+    if (target.classList.contains("img-filters__button--active")) return;
+
+    if (previousActiveButton) {
+      previousActiveButton.classList.remove("img-filters__button--active");
+    }
+
+    target.classList.add("img-filters__button--active");
+
+    applyFilter(target.id);
+  }, 500)
+);
+
+sectionPictures.addEventListener("click", (e) => {
   const id = +e.target.dataset.id;
   if (isNaN(id)) {
     return;
