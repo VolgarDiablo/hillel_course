@@ -13,8 +13,39 @@
       href="https://cdn.jsdelivr.net/npm/nouislider@15.5.0/dist/nouislider.min.css"
     />
   </head>
-  <body>
-    <main>
+
+  <body class="body">
+    <main class="mainm">
+      <!-- Фільтрування зображень від інших користувачів-->
+      <section class="img-filters container">
+        <h2 class="img-filters__title">Фільтр фотографій</h2>
+        <form
+          class="img-filters__form"
+          action="index.html"
+          method="get"
+          autocomplete="off"
+          style="align-items: center"
+        >
+          <button
+            type="button"
+            class="img-filters__button img-filters__button--active"
+            id="filter-default"
+          >
+            За замовчуванням
+          </button>
+          <button type="button" class="img-filters__button" id="filter-random">
+            ВИпадкові
+          </button>
+          <button
+            type="button"
+            class="img-filters__button"
+            id="filter-discussed"
+          >
+            Популярні
+          </button>
+        </form>
+      </section>
+
       <section class="pictures container">
         <!-- Поле для завантаження нового зображення на сайт -->
         <section class="img-upload">
