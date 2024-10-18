@@ -1,42 +1,42 @@
 import React from "react";
+import { Card, ListGroup, Container } from "react-bootstrap";
 import "./swapi.css";
 
-const SwapiPeople = () => {
+const Swapi = () => {
   return (
-    <div className="container mt-5">
-      <h1 className="text-center">SWAPI People</h1>
-      <div className="card mt-4">
-        <div className="card-header">
+    <Container className="mt-5">
+      <h1 className="title">SWAPI People</h1>
+      <Card className="mt-4">
+        <Card.Header className="cardHeader">
           <h2>Luke Skywalker</h2>
-        </div>
-        <div className="card-body">
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">
-              <strong>Height:</strong> 172 cm
-            </li>
-            <li className="list-group-item">
-              <strong>Mass:</strong> 77 kg
-            </li>
-            <li className="list-group-item">
-              <strong>Hair Color:</strong> Blond
-            </li>
-            <li className="list-group-item">
-              <strong>Eye Color:</strong> Blue
-            </li>
-            <li className="list-group-item">
-              <strong>Gender:</strong> Male
-            </li>
-            <li className="list-group-item">
-              <strong>Birth Year:</strong> 19BBY
-            </li>
-            <li className="list-group-item">
-              <strong>Homeworld:</strong> Tatooine
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+        </Card.Header>
+
+        <ListGroup variant="flush">
+          <ListGroup.Item className="listGroupItem">
+            <strong>Height:</strong> 172 cm
+          </ListGroup.Item>
+          <ListGroup.Item className="listGroupItem">
+            <strong>Mass:</strong> 77 kg
+          </ListGroup.Item>
+          <ListGroup.Item className="listGroupItem">
+            <strong>Hair Color:</strong> Blond
+          </ListGroup.Item>
+          <ListGroup.Item className="listGroupItem">
+            <strong>Eye Color:</strong> Blue
+          </ListGroup.Item>
+          <ListGroup.Item className="listGroupItem">
+            <strong>Gender:</strong> Male
+          </ListGroup.Item>
+          <ListGroup.Item className="listGroupItem">
+            <strong>Birth Year:</strong> 19BBY
+          </ListGroup.Item>
+          <ListGroup.Item className="listGroupItem">
+            <strong>Homeworld:</strong> Tatooine
+          </ListGroup.Item>
+        </ListGroup>
+      </Card>
+    </Container>
   );
 };
 
-export default SwapiPeople;
+export default Swapi;
