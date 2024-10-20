@@ -1,10 +1,10 @@
 import "./App.css";
-import Vote from "./components/vote/vote";
+import Challenge from "./components/challenge";
 
 function App() {
   return (
     <div className="App">
-      <Vote />
+      <Challenge />
     </div>
   );
 }

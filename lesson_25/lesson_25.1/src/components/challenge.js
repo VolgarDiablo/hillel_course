@@ -10,9 +10,10 @@ const emojis = [
   { emoji: "😍", label: "heart eyes" },
 ];
 
-function Vote() {
+function Challenge() {
   const [counts, setCounts] = useState(Array(emojis.length).fill(0));
   const [biggerIndex, setBiggerIndex] = useState(null);
+  const [hover, setHover] = useState(biggerIndex !== null);
 
   useEffect(() => {
     const savedEmojiIndex = localStorage.getItem("winnerEmojiIndex");
@@ -41,9 +42,26 @@ function Vote() {
 
     if (maxCount > 0 && isUniqueMax) {
       setBiggerIndex(maxIndex);
+      setIsHover();
       localStorage.setItem("winnerEmojiIndex", maxIndex);
       localStorage.setItem("winnerCount", maxCount);
     }
+  }
+
+  function resetResult() {
+    localStorage.removeItem("winnerEmojiIndex");
+    localStorage.removeItem("winnerCount");
+
+    setCounts(Array(emojis.length).fill(0));
+    setIsNotHover();
+  }
+
+  function setIsHover() {
+    setHover(true);
+  }
+
+  function setIsNotHover() {
+    setHover(false);
   }
 
   return (
@@ -75,11 +93,11 @@ function Vote() {
 
           <div className="d-flex justify-content-center mb-4">
             <Button variant="success" onClick={showResults}>
-              Show Results
+              Показати результати
             </Button>
           </div>
 
-          {biggerIndex !== null && (
+          {biggerIndex !== null && hover === true && (
             <>
               <Card.Text className="text-center">
                 <strong style={{ fontSize: "1.5rem" }}>
@@ -99,6 +117,11 @@ function Vote() {
                 </span>
                 <div>Кількість голосів: {counts[biggerIndex]}</div>
               </div>
+              <div className="d-flex justify-content-center mb-4">
+                <Button variant="danger" onClick={resetResult} className="mt-4">
+                  Обнулити результати
+                </Button>
+              </div>
             </>
           )}
         </Card.Body>
@@ -107,4 +130,4 @@ function Vote() {
   );
 }
 
-export default Vote;
+export default Challenge;
