@@ -1,0 +1,43 @@
+:root {
+  --text-color: #000000;
+  --header-bg-color: #f44336;
+  --header-text-color: white;
+  --input-bg-color: #ffffff;
+  --input-text-color: #333;
+  --add-btn-bg-color: #d9d9d9;
+  --add-btn-text-color: #555;
+  --add-btn-hover-bg-color: #bbb;
+  --list-item-bg-color: #eee;
+  --list-item-alt-bg-color: #f9f9f9;
+  --list-item-hover-bg-color: #ddd;
+  --checked-bg-color: #888;
+  --checked-text-color: #fff;
+  --close-bg-hover-color: #f44336;
+  --close-text-hover-color: white;
+  --active-bg-color: #000000;
+  --active-text-color: #ffffff;
+  --hover-bg-color: #555555;
+  --hover-text-color: #ffffff;
+}
+
+[data-theme="dark"] {
+  --text-color: #ffffff;
+  --header-bg-color: #333333;
+  --header-text-color: #f2f2f2;
+  --input-bg-color: #555555;
+  --input-text-color: #ffffff;
+  --add-btn-bg-color: #666666;
+  --add-btn-text-color: #f2f2f2;
+  --add-btn-hover-bg-color: #777777;
+  --list-item-bg-color: #444444;
+  --list-item-alt-bg-color: #555555;
+  --list-item-hover-bg-color: #666666;
+  --checked-bg-color: #222222;
+  --checked-text-color: #ffffff;
+  --close-bg-hover-color: #a83232;
+  --close-text-hover-color: #ffffff;
+  --active-bg-color: #007a4d;
+  --active-text-color: #ffffff;
+  --hover-bg-color: #ddd;
+  --hover-text-color: #000000;
+}

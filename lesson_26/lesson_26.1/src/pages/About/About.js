@@ -10,7 +10,7 @@ const emojis = [
   { emoji: "😍", label: "heart eyes" },
 ];
 
-const Challenge = React.memo(() => {
+const About = React.memo(() => {
   const [counts, setCounts] = useState(Array(emojis.length).fill(0));
   const [biggerIndex, setBiggerIndex] = useState(null);
   const [hover, setHover] = useState(biggerIndex !== null);
@@ -59,7 +59,7 @@ const Challenge = React.memo(() => {
   }, []);
 
   return (
-    <Container className="d-flex justify-content-center align-items-center min-vh-100">
+    <Container className="d-flex justify-content-center align-items-center">
       <Card
         className="p-4 shadow-lg"
         style={{ width: "600px", border: "1px solid #ccc" }}
@@ -124,4 +124,4 @@ const Challenge = React.memo(() => {
   );
 });
 
-export default Challenge;
+export default About;

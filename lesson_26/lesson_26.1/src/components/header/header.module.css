@@ -1,0 +1,76 @@
+.header {
+  background-color: var(--header-bg-color);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 15px;
+}
+
+.navItem {
+  color: var(--header-text-color);
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--header-text-color);
+  padding: 10px 15px;
+}
+
+.activeNavItem {
+  background-color: var(--active-bg-color);
+  color: var(--active-text-color);
+  border-radius: 5px;
+}
+
+.navLink:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--hover-text-color);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggleButton {
+  background: none;
+  border: 1px solid var(--header-text-color);
+  color: var(--header-text-color);
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggleButton:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--hover-text-color);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggleButton {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
+
+ul {
+  margin-top: 16px !important;
+}
