@@ -13,6 +13,7 @@ const ToDo = () => {
     inputText: z
       .string()
       .nonempty({ message: "Field cannot be empty" })
+      .min(5, { message: "Input must be at least 5 characters long" })
       .refine((value) => !tasks.some((task) => task.text === value), {
         message: "This task is already in the list!",
       }),
