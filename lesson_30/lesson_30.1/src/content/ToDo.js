@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { addTask } from "../reducers/todoSlice";
+import useStore from "../store";
 
 const ToDo = () => {
   const [inputText, setInputText] = useState("");
   const [error, setError] = useState("");
-  const dispatch = useDispatch();
-  const tasks = useSelector((state) => state.todo.tasks);
+  const tasks = useStore((state) => state.tasks);
+  const addTask = useStore((state) => state.addTask);
+  const clearTasks = useStore((state) => state.clearTasks);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -30,7 +30,7 @@ const ToDo = () => {
       timeCreateTask: new Date().toLocaleString(),
     };
 
-    dispatch(addTask(newTask));
+    addTask(newTask);
     setInputText("");
     setError("");
   };
@@ -70,6 +70,12 @@ const ToDo = () => {
 
       <footer className="text-gray-800 p-4 text-center">
         Total: {tasks.length}
+        <button
+          onClick={clearTasks}
+          className="ml-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+        >
+          Clear ToDo
+        </button>
       </footer>
     </div>
   );
