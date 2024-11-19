@@ -90,9 +90,9 @@ const Header = () => {
       </header>
 
       <section className="relative w-full h-[400px] text-white flex items-center justify-center">
-        <div className="container mx-auto flex items-center justify-between max-w-[1200px]">
-          <div className="flex flex-col max-w-[600px]">
-            <h1 className="text-4xl font-bold">Чіп Чендж</h1>
+        <div className="container mx-auto flex items-center justify-between max-w-[900px]">
+          <div className="flex flex-col max-w-[300px] gap-1">
+            <h1 className="text-5xl font-bold">Чіп Чендж</h1>
             <p className="text-lg">Обмінник валют - навчальний</p>
             <div className="mt-8">
               <NavLink
