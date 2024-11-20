@@ -8,8 +8,8 @@ import debitCard from "../../assets/images/debit-card.png";
 const Header = () => {
   return (
     <div>
-      <header className="container mx-auto py-4 bg-gray-50">
-        <nav className="flex items-center justify-between">
+      <header className=" mx-auto py-10 bg-gray-50">
+        <nav className="flex items-center justify-between container">
           <div className="flex items-center">
             <NavLink to="/" className="mr-8">
               <img alt="Логотип Чіп Чендж" src={logo} className="h-8 w-auto" />
@@ -108,7 +108,7 @@ const Header = () => {
             <img
               src={debitCard}
               alt="Дебетовая карта"
-              className="w-[300px] h-auto"
+              className="w-[350px] h-auto"
             />
           </div>
         </div>
