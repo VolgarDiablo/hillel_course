@@ -42,19 +42,20 @@ const Changer = () => {
   const schema = z.string().regex(/^\d*$/, "Введите только цифры");
 
   const [fromValue, setFromValue] = useState("");
-  const [toValue, setToValue] = useState("");
+  const [fromError, setFromError] = useState("");
 
-  const [error, setError] = useState("");
+  const [toValue, setToValue] = useState("");
+  const [toError, setToError] = useState("");
 
   const handleFromChange = (e) => {
     const inputValue = e.target.value;
 
     try {
       schema.parse(inputValue);
-      setError("");
+      setFromError("");
     } catch (err) {
       if (err instanceof z.ZodError) {
-        setError(err.errors[0].message);
+        setFromError(err.errors[0].message);
       }
     }
 
@@ -66,10 +67,10 @@ const Changer = () => {
 
     try {
       schema.parse(inputValue);
-      setError("");
+      setToError("");
     } catch (err) {
       if (err instanceof z.ZodError) {
-        setError(err.errors[0].message);
+        setToError(err.errors[0].message);
       }
     }
 
@@ -95,15 +96,22 @@ const Changer = () => {
                 В мене є:
               </label>
               <div class="flex gap-[15px]">
-                <input
-                  type="text"
-                  id="from"
-                  name="from"
-                  placeholder="1000"
-                  value={fromValue}
-                  onChange={handleFromChange}
-                  className="text-[#707C87] text-[20px] text-center leading-7 border border-[#C1C2CA] rounded-[4px] px-3 py-4 w-[220px] focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
+                <div>
+                  <input
+                    type="text"
+                    id="from"
+                    name="from"
+                    placeholder="1000"
+                    value={fromValue}
+                    onChange={handleFromChange}
+                    className="text-[#707C87] text-[20px] text-center leading-7 border border-[#C1C2CA] rounded-[4px] px-3 py-4 w-[220px] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  {fromError && (
+                    <p className="text-red-500 text-sm mt-2">
+                      {fromError} {/* Отображение ошибки */}
+                    </p>
+                  )}
+                </div>
 
                 <div className="relative w-[120px]">
                   <select
@@ -160,15 +168,22 @@ const Changer = () => {
               </label>
 
               <div class="flex gap-[15px] justify-between w-[355px]">
-                <input
-                  type="text"
-                  id="to"
-                  name="to"
-                  placeholder="38.7"
-                  value={toValue}
-                  onChange={handleToChange}
-                  className="text-[#707C87] text-[20px] text-center leading-7 border border-[#C1C2CA] rounded-[4px] px-3 py-4 w-[220px] focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
+                <div>
+                  <input
+                    type="text"
+                    id="to"
+                    name="to"
+                    placeholder="38.7"
+                    value={toValue}
+                    onChange={handleToChange}
+                    className="text-[#707C87] text-[20px] text-center leading-7 border border-[#C1C2CA] rounded-[4px] px-3 py-4 w-[220px] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  {toError && (
+                    <p className="text-red-500 text-sm mt-2">
+                      {toError} {/* Отображение ошибки */}
+                    </p>
+                  )}
+                </div>
 
                 <div className="relative w-[120px]">
                   <select
@@ -211,11 +226,6 @@ const Changer = () => {
               </div>
             </div>
           </div>
-          {error && (
-            <p className="text-red-500 text-sm mt-2">
-              {error} {/* Отображение общего сообщения об ошибке */}
-            </p>
-          )}
 
           <div className="flex justify-between items-center pt-[25px]">
             <div
