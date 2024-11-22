@@ -95,6 +95,7 @@ const Changer = () => {
               >
                 В мене є:
               </label>
+
               <div class="flex gap-[15px]">
                 <div>
                   <input
@@ -107,17 +108,15 @@ const Changer = () => {
                     className="text-[#707C87] text-[20px] text-center leading-7 border border-[#C1C2CA] rounded-[4px] px-3 py-4 w-[220px] focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   {fromError && (
-                    <p className="text-red-500 text-sm mt-2">
-                      {fromError} {/* Отображение ошибки */}
-                    </p>
+                    <p className="text-red-500 text-sm mt-2">{fromError}</p>
                   )}
                 </div>
 
-                <div className="relative w-[120px]">
+                <div className="relative w-[120px] flex items-center">
                   <select
                     value={currencyFrom}
                     onChange={handleCurrencyFromChange}
-                    className="w-full h-[60px] text-[#707C87] text-[20px] leading-7 border border-[#C1C2CA] rounded-[4px] px-[16px] pr-[40px] focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer hover:shadow-md transition appearance-none"
+                    className="w-full h-[60px] text-[#707C87] text-[20px] leading-7 border border-[#C1C2CA] rounded-[4px] px-[16px] pr-[40px] focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer hover:shadow-md transition appearance-none flex"
                   >
                     {currencies.map((currency) => (
                       <option
@@ -135,22 +134,20 @@ const Changer = () => {
                     ))}
                   </select>
 
-                  <div className="absolute inset-y-0 right-[10px] flex items-center pointer-events-none">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-[#707C87]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-[#707C87] ml-[-30px] pointer-events-none"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -179,17 +176,15 @@ const Changer = () => {
                     className="text-[#707C87] text-[20px] text-center leading-7 border border-[#C1C2CA] rounded-[4px] px-3 py-4 w-[220px] focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   {toError && (
-                    <p className="text-red-500 text-sm mt-2">
-                      {toError} {/* Отображение ошибки */}
-                    </p>
+                    <p className="text-red-500 text-sm mt-2">{toError}</p>
                   )}
                 </div>
 
-                <div className="relative w-[120px]">
+                <div className="relative w-[120px] flex items-center">
                   <select
                     value={currencyTo}
                     onChange={handleCurrencyToChange}
-                    className="w-full h-[60px] text-[#707C87] text-[20px] leading-7 border border-[#C1C2CA] rounded-[4px] px-[16px] pr-[40px] focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer hover:shadow-md transition appearance-none"
+                    className="w-full h-[60px] text-[#707C87] text-[20px] leading-7 border border-[#C1C2CA] rounded-[4px] px-[16px] pr-[40px] focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer hover:shadow-md transition appearance-none flex"
                   >
                     {currencies.map((currency) => (
                       <option
@@ -206,22 +201,21 @@ const Changer = () => {
                       </option>
                     ))}
                   </select>
-                  <div className="absolute inset-y-0 right-[10px] flex items-center pointer-events-none">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-[#707C87]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-[#707C87] ml-[-30px] pointer-events-none"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
