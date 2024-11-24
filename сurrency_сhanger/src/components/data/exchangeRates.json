@@ -1,0 +1,1458 @@
+[
+  {
+    "date": "17.11.2024",
+    "bank": "PB",
+    "baseCurrency": 980,
+    "baseCurrencyLit": "UAH",
+    "exchangeRate": [
+      {
+        "baseCurrency": "UAH",
+        "currency": "AUD",
+        "saleRateNB": 26.6729,
+        "purchaseRateNB": 26.6729
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "AZN",
+        "saleRateNB": 24.2587,
+        "purchaseRateNB": 24.2587
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "BYN",
+        "saleRateNB": 14.9915,
+        "purchaseRateNB": 14.9915
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CAD",
+        "saleRateNB": 29.431,
+        "purchaseRateNB": 29.431
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CHF",
+        "saleRateNB": 46.3865,
+        "purchaseRateNB": 46.3865,
+        "saleRate": 46.8,
+        "purchaseRate": 46.13
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CNY",
+        "saleRateNB": 5.6976,
+        "purchaseRateNB": 5.6976
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CZK",
+        "saleRateNB": 1.7183,
+        "purchaseRateNB": 1.7183,
+        "saleRate": 1.735,
+        "purchaseRate": 1.705
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "DKK",
+        "saleRateNB": 5.8276,
+        "purchaseRateNB": 5.8276
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "EUR",
+        "saleRateNB": 43.4677,
+        "purchaseRateNB": 43.4677,
+        "saleRate": 44.2,
+        "purchaseRate": 43.2
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GBP",
+        "saleRateNB": 52.2404,
+        "purchaseRateNB": 52.2404,
+        "saleRate": 52.64,
+        "purchaseRate": 51.89
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GEL",
+        "saleRateNB": 15.0408,
+        "purchaseRateNB": 15.0408
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "HUF",
+        "saleRateNB": 0.106782,
+        "purchaseRateNB": 0.106782
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "ILS",
+        "saleRateNB": 11.0404,
+        "purchaseRateNB": 11.0404
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "JPY",
+        "saleRateNB": 0.26441,
+        "purchaseRateNB": 0.26441
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "KZT",
+        "saleRateNB": 0.08323,
+        "purchaseRateNB": 0.08323
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "MDL",
+        "saleRateNB": 2.28,
+        "purchaseRateNB": 2.28
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "NOK",
+        "saleRateNB": 3.6964,
+        "purchaseRateNB": 3.6964
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "PLN",
+        "saleRateNB": 10.0154,
+        "purchaseRateNB": 10.0154,
+        "saleRate": 10.175,
+        "purchaseRate": 10.03
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SEK",
+        "saleRateNB": 3.7464,
+        "purchaseRateNB": 3.7464
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SGD",
+        "saleRateNB": 30.6515,
+        "purchaseRateNB": 30.6515
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TMT",
+        "saleRateNB": 11.777,
+        "purchaseRateNB": 11.777
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TRY",
+        "saleRateNB": 1.2004,
+        "purchaseRateNB": 1.2004
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UAH",
+        "saleRateNB": 1,
+        "purchaseRateNB": 1
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "USD",
+        "saleRateNB": 41.2446,
+        "purchaseRateNB": 41.2446,
+        "saleRate": 41.6,
+        "purchaseRate": 41
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UZS",
+        "saleRateNB": 0.0032253,
+        "purchaseRateNB": 0.0032253
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAG",
+        "saleRateNB": 1.23262,
+        "purchaseRateNB": 1.23262
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAU",
+        "saleRateNB": 105.2789,
+        "purchaseRateNB": 105.2789
+      }
+    ]
+  },
+  {
+    "date": "18.11.2024",
+    "bank": "PB",
+    "baseCurrency": 980,
+    "baseCurrencyLit": "UAH",
+    "exchangeRate": [
+      {
+        "baseCurrency": "UAH",
+        "currency": "AUD",
+        "saleRateNB": 26.7203,
+        "purchaseRateNB": 26.7203
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "AZN",
+        "saleRateNB": 24.285,
+        "purchaseRateNB": 24.285
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "BYN",
+        "saleRateNB": 15.0042,
+        "purchaseRateNB": 15.0042
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CAD",
+        "saleRateNB": 29.3951,
+        "purchaseRateNB": 29.3951
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CHF",
+        "saleRateNB": 46.486,
+        "purchaseRateNB": 46.486,
+        "saleRate": 46.95,
+        "purchaseRate": 46.26
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CNY",
+        "saleRateNB": 5.7111,
+        "purchaseRateNB": 5.7111
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CZK",
+        "saleRateNB": 1.7271,
+        "purchaseRateNB": 1.7271,
+        "saleRate": 1.735,
+        "purchaseRate": 1.705
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "DKK",
+        "saleRateNB": 5.8526,
+        "purchaseRateNB": 5.8526
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "EUR",
+        "saleRateNB": 43.6532,
+        "purchaseRateNB": 43.6532,
+        "saleRate": 44.2,
+        "purchaseRate": 43.2
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GBP",
+        "saleRateNB": 52.326,
+        "purchaseRateNB": 52.326,
+        "saleRate": 52.57,
+        "purchaseRate": 51.77
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GEL",
+        "saleRateNB": 15.0408,
+        "purchaseRateNB": 15.0408
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "HUF",
+        "saleRateNB": 0.107264,
+        "purchaseRateNB": 0.107264
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "ILS",
+        "saleRateNB": 11.035,
+        "purchaseRateNB": 11.035
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "JPY",
+        "saleRateNB": 0.2656,
+        "purchaseRateNB": 0.2656
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "KZT",
+        "saleRateNB": 0.083114,
+        "purchaseRateNB": 0.083114
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "MDL",
+        "saleRateNB": 2.2797,
+        "purchaseRateNB": 2.2797
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "NOK",
+        "saleRateNB": 3.7331,
+        "purchaseRateNB": 3.7331
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "PLN",
+        "saleRateNB": 10.1066,
+        "purchaseRateNB": 10.1066,
+        "saleRate": 10.17,
+        "purchaseRate": 10.02
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SEK",
+        "saleRateNB": 3.7684,
+        "purchaseRateNB": 3.7684
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SGD",
+        "saleRateNB": 30.785,
+        "purchaseRateNB": 30.785
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TMT",
+        "saleRateNB": 11.777,
+        "purchaseRateNB": 11.777
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TRY",
+        "saleRateNB": 1.1992,
+        "purchaseRateNB": 1.1992
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UAH",
+        "saleRateNB": 1,
+        "purchaseRateNB": 1
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "USD",
+        "saleRateNB": 41.2796,
+        "purchaseRateNB": 41.2796,
+        "saleRate": 41.65,
+        "purchaseRate": 41.05
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UZS",
+        "saleRateNB": 0.0032253,
+        "purchaseRateNB": 0.0032253
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAG",
+        "saleRateNB": 1.26379,
+        "purchaseRateNB": 1.26379
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAU",
+        "saleRateNB": 106.04482,
+        "purchaseRateNB": 106.04482
+      }
+    ]
+  },
+  {
+    "date": "19.11.2024",
+    "bank": "PB",
+    "baseCurrency": 980,
+    "baseCurrencyLit": "UAH",
+    "exchangeRate": [
+      {
+        "baseCurrency": "UAH",
+        "currency": "AUD",
+        "saleRateNB": 26.6929,
+        "purchaseRateNB": 26.6929
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "AZN",
+        "saleRateNB": 24.3405,
+        "purchaseRateNB": 24.3405
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "BYN",
+        "saleRateNB": 15.0376,
+        "purchaseRateNB": 15.0376
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CAD",
+        "saleRateNB": 29.3602,
+        "purchaseRateNB": 29.3602
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CHF",
+        "saleRateNB": 46.5948,
+        "purchaseRateNB": 46.5948,
+        "saleRate": 47.16,
+        "purchaseRate": 46.49
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CNY",
+        "saleRateNB": 5.7111,
+        "purchaseRateNB": 5.7111
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CZK",
+        "saleRateNB": 1.7264,
+        "purchaseRateNB": 1.7264,
+        "saleRate": 1.74,
+        "purchaseRate": 1.71
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "DKK",
+        "saleRateNB": 5.8498,
+        "purchaseRateNB": 5.8498
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "EUR",
+        "saleRateNB": 43.6345,
+        "purchaseRateNB": 43.6345,
+        "saleRate": 44.2,
+        "purchaseRate": 43.2
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GBP",
+        "saleRateNB": 52.2398,
+        "purchaseRateNB": 52.2398,
+        "saleRate": 52.6,
+        "purchaseRate": 51.84
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GEL",
+        "saleRateNB": 15.0408,
+        "purchaseRateNB": 15.0408
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "HUF",
+        "saleRateNB": 0.106801,
+        "purchaseRateNB": 0.106801
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "ILS",
+        "saleRateNB": 11.0619,
+        "purchaseRateNB": 11.0619
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "JPY",
+        "saleRateNB": 0.26647,
+        "purchaseRateNB": 0.26647
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "KZT",
+        "saleRateNB": 0.082972,
+        "purchaseRateNB": 0.082972
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "MDL",
+        "saleRateNB": 2.2804,
+        "purchaseRateNB": 2.2804
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "NOK",
+        "saleRateNB": 3.7251,
+        "purchaseRateNB": 3.7251
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "PLN",
+        "saleRateNB": 10.0859,
+        "purchaseRateNB": 10.0859,
+        "saleRate": 10.16,
+        "purchaseRate": 10.02
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SEK",
+        "saleRateNB": 3.7616,
+        "purchaseRateNB": 3.7616
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SGD",
+        "saleRateNB": 30.7663,
+        "purchaseRateNB": 30.7663
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TMT",
+        "saleRateNB": 11.777,
+        "purchaseRateNB": 11.777
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TRY",
+        "saleRateNB": 1.1981,
+        "purchaseRateNB": 1.1981
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UAH",
+        "saleRateNB": 1,
+        "purchaseRateNB": 1
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "USD",
+        "saleRateNB": 41.3715,
+        "purchaseRateNB": 41.3715,
+        "saleRate": 41.6,
+        "purchaseRate": 41
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UZS",
+        "saleRateNB": 0.0032253,
+        "purchaseRateNB": 0.0032253
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAG",
+        "saleRateNB": 1.27493,
+        "purchaseRateNB": 1.27493
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAU",
+        "saleRateNB": 107.34953,
+        "purchaseRateNB": 107.34953
+      }
+    ]
+  },
+  {
+    "date": "20.11.2024",
+    "bank": "PB",
+    "baseCurrency": 980,
+    "baseCurrencyLit": "UAH",
+    "exchangeRate": [
+      {
+        "baseCurrency": "UAH",
+        "currency": "AUD",
+        "saleRateNB": 26.861,
+        "purchaseRateNB": 26.861
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "AZN",
+        "saleRateNB": 24.3009,
+        "purchaseRateNB": 24.3009
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "BYN",
+        "saleRateNB": 15.0229,
+        "purchaseRateNB": 15.0229
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CAD",
+        "saleRateNB": 29.48,
+        "purchaseRateNB": 29.48
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CHF",
+        "saleRateNB": 46.8234,
+        "purchaseRateNB": 46.8234,
+        "saleRate": 47.05,
+        "purchaseRate": 46.37
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CNY",
+        "saleRateNB": 5.709,
+        "purchaseRateNB": 5.709
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CZK",
+        "saleRateNB": 1.7285,
+        "purchaseRateNB": 1.7285,
+        "saleRate": 1.74,
+        "purchaseRate": 1.71
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "DKK",
+        "saleRateNB": 5.8572,
+        "purchaseRateNB": 5.8572
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "EUR",
+        "saleRateNB": 43.691,
+        "purchaseRateNB": 43.691,
+        "saleRate": 44.2,
+        "purchaseRate": 43.2
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GBP",
+        "saleRateNB": 52.2507,
+        "purchaseRateNB": 52.2507,
+        "saleRate": 52.79,
+        "purchaseRate": 52.04
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GEL",
+        "saleRateNB": 15.0408,
+        "purchaseRateNB": 15.0408
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "HUF",
+        "saleRateNB": 0.107359,
+        "purchaseRateNB": 0.107359
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "ILS",
+        "saleRateNB": 11.0404,
+        "purchaseRateNB": 11.0404
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "JPY",
+        "saleRateNB": 0.26834,
+        "purchaseRateNB": 0.26834
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "KZT",
+        "saleRateNB": 0.083273,
+        "purchaseRateNB": 0.083273
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "MDL",
+        "saleRateNB": 2.276,
+        "purchaseRateNB": 2.276
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "NOK",
+        "saleRateNB": 3.7498,
+        "purchaseRateNB": 3.7498
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "PLN",
+        "saleRateNB": 10.095,
+        "purchaseRateNB": 10.095,
+        "saleRate": 10.18,
+        "purchaseRate": 10.03
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SEK",
+        "saleRateNB": 3.7722,
+        "purchaseRateNB": 3.7722
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SGD",
+        "saleRateNB": 30.8625,
+        "purchaseRateNB": 30.8625
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TMT",
+        "saleRateNB": 11.777,
+        "purchaseRateNB": 11.777
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TRY",
+        "saleRateNB": 1.196,
+        "purchaseRateNB": 1.196
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UAH",
+        "saleRateNB": 1,
+        "purchaseRateNB": 1
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "USD",
+        "saleRateNB": 41.331,
+        "purchaseRateNB": 41.331,
+        "saleRate": 41.6,
+        "purchaseRate": 41
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UZS",
+        "saleRateNB": 0.0032253,
+        "purchaseRateNB": 0.0032253
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAG",
+        "saleRateNB": 1.29879,
+        "purchaseRateNB": 1.29879
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAU",
+        "saleRateNB": 109.04068,
+        "purchaseRateNB": 109.04068
+      }
+    ]
+  },
+  {
+    "date": "21.11.2024",
+    "bank": "PB",
+    "baseCurrency": 980,
+    "baseCurrencyLit": "UAH",
+    "exchangeRate": [
+      {
+        "baseCurrency": "UAH",
+        "currency": "BYN",
+        "saleRateNB": 14.9947,
+        "purchaseRateNB": 14.9947
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CAD",
+        "saleRateNB": 29.5109,
+        "purchaseRateNB": 29.5109
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CHF",
+        "saleRateNB": 46.635,
+        "purchaseRateNB": 46.635,
+        "saleRate": 47.11,
+        "purchaseRate": 46.43
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CNY",
+        "saleRateNB": 5.6936,
+        "purchaseRateNB": 5.6936
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CZK",
+        "saleRateNB": 1.7225,
+        "purchaseRateNB": 1.7225,
+        "saleRate": 1.73,
+        "purchaseRate": 1.7
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "DKK",
+        "saleRateNB": 5.8404,
+        "purchaseRateNB": 5.8404
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "EUR",
+        "saleRateNB": 43.5635,
+        "purchaseRateNB": 43.5635,
+        "saleRate": 44.2,
+        "purchaseRate": 43.2
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GBP",
+        "saleRateNB": 52.2597,
+        "purchaseRateNB": 52.2597,
+        "saleRate": 52.62,
+        "purchaseRate": 51.87
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GEL",
+        "saleRateNB": 15.0408,
+        "purchaseRateNB": 15.0408
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "HUF",
+        "saleRateNB": 0.106323,
+        "purchaseRateNB": 0.106323
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "ILS",
+        "saleRateNB": 11.0522,
+        "purchaseRateNB": 11.0522
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "JPY",
+        "saleRateNB": 0.26493,
+        "purchaseRateNB": 0.26493
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "KZT",
+        "saleRateNB": 0.083152,
+        "purchaseRateNB": 0.083152
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "MDL",
+        "saleRateNB": 2.2643,
+        "purchaseRateNB": 2.2643
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "NOK",
+        "saleRateNB": 3.7418,
+        "purchaseRateNB": 3.7418
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "PLN",
+        "saleRateNB": 10.0583,
+        "purchaseRateNB": 10.0583,
+        "saleRate": 10.3,
+        "purchaseRate": 9.975
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SEK",
+        "saleRateNB": 3.7537,
+        "purchaseRateNB": 3.7537
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SGD",
+        "saleRateNB": 30.7402,
+        "purchaseRateNB": 30.7402
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TMT",
+        "saleRateNB": 11.777,
+        "purchaseRateNB": 11.777
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TRY",
+        "saleRateNB": 1.1969,
+        "purchaseRateNB": 1.1969
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UAH",
+        "saleRateNB": 1,
+        "purchaseRateNB": 1
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "USD",
+        "saleRateNB": 41.2533,
+        "purchaseRateNB": 41.2533,
+        "saleRate": 41.6,
+        "purchaseRate": 41
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UZS",
+        "saleRateNB": 0.0032253,
+        "purchaseRateNB": 0.0032253
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAG",
+        "saleRateNB": 1.279,
+        "purchaseRateNB": 1.279
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAU",
+        "saleRateNB": 108.5593,
+        "purchaseRateNB": 108.5593
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "AUD",
+        "saleRateNB": 26.8476,
+        "purchaseRateNB": 26.8476
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "AZN",
+        "saleRateNB": 24.2638,
+        "purchaseRateNB": 24.2638
+      }
+    ]
+  },
+  {
+    "date": "22.11.2024",
+    "bank": "PB",
+    "baseCurrency": 980,
+    "baseCurrencyLit": "UAH",
+    "exchangeRate": [
+      {
+        "baseCurrency": "UAH",
+        "currency": "AUD",
+        "saleRateNB": 26.935,
+        "purchaseRateNB": 26.935
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "AZN",
+        "saleRateNB": 24.2887,
+        "purchaseRateNB": 24.2887
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "BYN",
+        "saleRateNB": 15.0065,
+        "purchaseRateNB": 15.0065
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CAD",
+        "saleRateNB": 29.5724,
+        "purchaseRateNB": 29.5724
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CHF",
+        "saleRateNB": 46.7512,
+        "purchaseRateNB": 46.7512,
+        "saleRate": 46.89,
+        "purchaseRate": 46.21
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CNY",
+        "saleRateNB": 5.7026,
+        "purchaseRateNB": 5.7026
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CZK",
+        "saleRateNB": 1.7141,
+        "purchaseRateNB": 1.7141,
+        "saleRate": 1.71,
+        "purchaseRate": 1.68
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "DKK",
+        "saleRateNB": 5.8278,
+        "purchaseRateNB": 5.8278
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "EUR",
+        "saleRateNB": 43.4659,
+        "purchaseRateNB": 43.4659,
+        "saleRate": 44,
+        "purchaseRate": 43
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GBP",
+        "saleRateNB": 52.1855,
+        "purchaseRateNB": 52.1855,
+        "saleRate": 52.27,
+        "purchaseRate": 51.52
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GEL",
+        "saleRateNB": 15.0408,
+        "purchaseRateNB": 15.0408
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "HUF",
+        "saleRateNB": 0.105807,
+        "purchaseRateNB": 0.105807
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "ILS",
+        "saleRateNB": 11.0597,
+        "purchaseRateNB": 11.0597
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "JPY",
+        "saleRateNB": 0.26736,
+        "purchaseRateNB": 0.26736
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "KZT",
+        "saleRateNB": 0.083293,
+        "purchaseRateNB": 0.083293
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "MDL",
+        "saleRateNB": 2.2645,
+        "purchaseRateNB": 2.2645
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "NOK",
+        "saleRateNB": 3.7426,
+        "purchaseRateNB": 3.7426
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "PLN",
+        "saleRateNB": 10.009,
+        "purchaseRateNB": 10.009,
+        "saleRate": 10.3,
+        "purchaseRate": 9.9
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SEK",
+        "saleRateNB": 3.7455,
+        "purchaseRateNB": 3.7455
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SGD",
+        "saleRateNB": 30.7348,
+        "purchaseRateNB": 30.7348
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TMT",
+        "saleRateNB": 11.777,
+        "purchaseRateNB": 11.777
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TRY",
+        "saleRateNB": 1.1973,
+        "purchaseRateNB": 1.1973
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UAH",
+        "saleRateNB": 1,
+        "purchaseRateNB": 1
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "USD",
+        "saleRateNB": 41.286,
+        "purchaseRateNB": 41.286,
+        "saleRate": 41.6,
+        "purchaseRate": 41
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UZS",
+        "saleRateNB": 0.0032253,
+        "purchaseRateNB": 0.0032253
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAG",
+        "saleRateNB": 1.28161,
+        "purchaseRateNB": 1.28161
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAU",
+        "saleRateNB": 109.99499,
+        "purchaseRateNB": 109.99499
+      }
+    ]
+  },
+  {
+    "date": "23.11.2024",
+    "bank": "PB",
+    "baseCurrency": 980,
+    "baseCurrencyLit": "UAH",
+    "exchangeRate": [
+      {
+        "baseCurrency": "UAH",
+        "currency": "AUD",
+        "saleRateNB": 26.935,
+        "purchaseRateNB": 26.935
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "AZN",
+        "saleRateNB": 24.2887,
+        "purchaseRateNB": 24.2887
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "BYN",
+        "saleRateNB": 15.0065,
+        "purchaseRateNB": 15.0065
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CAD",
+        "saleRateNB": 29.5724,
+        "purchaseRateNB": 29.5724
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CHF",
+        "saleRateNB": 46.7512,
+        "purchaseRateNB": 46.7512,
+        "saleRate": 46.55,
+        "purchaseRate": 45.9
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CNY",
+        "saleRateNB": 5.7026,
+        "purchaseRateNB": 5.7026
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CZK",
+        "saleRateNB": 1.7141,
+        "purchaseRateNB": 1.7141,
+        "saleRate": 1.71,
+        "purchaseRate": 1.68
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "DKK",
+        "saleRateNB": 5.8278,
+        "purchaseRateNB": 5.8278
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "EUR",
+        "saleRateNB": 43.4659,
+        "purchaseRateNB": 43.4659,
+        "saleRate": 43.85,
+        "purchaseRate": 42.85
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GBP",
+        "saleRateNB": 52.1855,
+        "purchaseRateNB": 52.1855,
+        "saleRate": 52.12,
+        "purchaseRate": 51.35
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GEL",
+        "saleRateNB": 15.0408,
+        "purchaseRateNB": 15.0408
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "HUF",
+        "saleRateNB": 0.105807,
+        "purchaseRateNB": 0.105807
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "ILS",
+        "saleRateNB": 11.0597,
+        "purchaseRateNB": 11.0597
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "JPY",
+        "saleRateNB": 0.26736,
+        "purchaseRateNB": 0.26736
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "KZT",
+        "saleRateNB": 0.083293,
+        "purchaseRateNB": 0.083293
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "MDL",
+        "saleRateNB": 2.2645,
+        "purchaseRateNB": 2.2645
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "NOK",
+        "saleRateNB": 3.7426,
+        "purchaseRateNB": 3.7426
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "PLN",
+        "saleRateNB": 10.009,
+        "purchaseRateNB": 10.009,
+        "saleRate": 10.3,
+        "purchaseRate": 9.89
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SEK",
+        "saleRateNB": 3.7455,
+        "purchaseRateNB": 3.7455
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SGD",
+        "saleRateNB": 30.7348,
+        "purchaseRateNB": 30.7348
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TMT",
+        "saleRateNB": 11.777,
+        "purchaseRateNB": 11.777
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TRY",
+        "saleRateNB": 1.1973,
+        "purchaseRateNB": 1.1973
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UAH",
+        "saleRateNB": 1,
+        "purchaseRateNB": 1
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "USD",
+        "saleRateNB": 41.286,
+        "purchaseRateNB": 41.286,
+        "saleRate": 41.65,
+        "purchaseRate": 41.05
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UZS",
+        "saleRateNB": 0.0032253,
+        "purchaseRateNB": 0.0032253
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAG",
+        "saleRateNB": 1.28161,
+        "purchaseRateNB": 1.28161
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAU",
+        "saleRateNB": 109.99499,
+        "purchaseRateNB": 109.99499
+      }
+    ]
+  },
+  {
+    "date": "24.11.2024",
+    "bank": "PB",
+    "baseCurrency": 980,
+    "baseCurrencyLit": "UAH",
+    "exchangeRate": [
+      {
+        "baseCurrency": "UAH",
+        "currency": "AUD",
+        "saleRateNB": 26.935,
+        "purchaseRateNB": 26.935
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "AZN",
+        "saleRateNB": 24.2887,
+        "purchaseRateNB": 24.2887
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "BYN",
+        "saleRateNB": 15.0065,
+        "purchaseRateNB": 15.0065
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CAD",
+        "saleRateNB": 29.5724,
+        "purchaseRateNB": 29.5724
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CHF",
+        "saleRateNB": 46.7512,
+        "purchaseRateNB": 46.7512,
+        "saleRate": 46.55,
+        "purchaseRate": 45.9
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CNY",
+        "saleRateNB": 5.7026,
+        "purchaseRateNB": 5.7026
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "CZK",
+        "saleRateNB": 1.7141,
+        "purchaseRateNB": 1.7141,
+        "saleRate": 1.71,
+        "purchaseRate": 1.68
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "DKK",
+        "saleRateNB": 5.8278,
+        "purchaseRateNB": 5.8278
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "EUR",
+        "saleRateNB": 43.4659,
+        "purchaseRateNB": 43.4659,
+        "saleRate": 43.85,
+        "purchaseRate": 42.85
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GBP",
+        "saleRateNB": 52.1855,
+        "purchaseRateNB": 52.1855,
+        "saleRate": 52.12,
+        "purchaseRate": 51.35
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "GEL",
+        "saleRateNB": 15.0408,
+        "purchaseRateNB": 15.0408
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "HUF",
+        "saleRateNB": 0.105807,
+        "purchaseRateNB": 0.105807
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "ILS",
+        "saleRateNB": 11.0597,
+        "purchaseRateNB": 11.0597
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "JPY",
+        "saleRateNB": 0.26736,
+        "purchaseRateNB": 0.26736
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "KZT",
+        "saleRateNB": 0.083293,
+        "purchaseRateNB": 0.083293
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "MDL",
+        "saleRateNB": 2.2645,
+        "purchaseRateNB": 2.2645
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "NOK",
+        "saleRateNB": 3.7426,
+        "purchaseRateNB": 3.7426
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "PLN",
+        "saleRateNB": 10.009,
+        "purchaseRateNB": 10.009,
+        "saleRate": 10.3,
+        "purchaseRate": 9.89
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SEK",
+        "saleRateNB": 3.7455,
+        "purchaseRateNB": 3.7455
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "SGD",
+        "saleRateNB": 30.7348,
+        "purchaseRateNB": 30.7348
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TMT",
+        "saleRateNB": 11.777,
+        "purchaseRateNB": 11.777
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "TRY",
+        "saleRateNB": 1.1973,
+        "purchaseRateNB": 1.1973
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UAH",
+        "saleRateNB": 1,
+        "purchaseRateNB": 1
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "USD",
+        "saleRateNB": 41.286,
+        "purchaseRateNB": 41.286,
+        "saleRate": 41.65,
+        "purchaseRate": 41.05
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "UZS",
+        "saleRateNB": 0.0032253,
+        "purchaseRateNB": 0.0032253
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAG",
+        "saleRateNB": 1.28161,
+        "purchaseRateNB": 1.28161
+      },
+      {
+        "baseCurrency": "UAH",
+        "currency": "XAU",
+        "saleRateNB": 109.99499,
+        "purchaseRateNB": 109.99499
+      }
+    ]
+  }
+]
