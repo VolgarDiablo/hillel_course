@@ -1,36 +1,35 @@
-import React, { useState, useEffect } from "react";
-import { z } from "zod";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import debounce from "lodash/debounce";
-import axios from "axios";
-import arrows from "../../assets/images/changer/arrows.png";
-import calendar from "../../assets/images/changer/calendar.png";
-import exchangeRates from "../../components/data/exchangeRates.json";
+import React, { useState, useEffect } from 'react';
+import { z } from 'zod';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import debounce from 'lodash/debounce';
+import arrows from '../../assets/images/changer/arrows.png';
+import calendar from '../../assets/images/changer/calendar.png';
+import exchangeRates from '../../components/data/exchangeRates.json';
 
 const Changer = () => {
-  const currencies = ["USD", "UAH", "GBP", "CNY"];
-  const [currencyFrom, setCurrencyFrom] = useState("USD");
-  const [currencyTo, setCurrencyTo] = useState("UAH");
+  const currencies = ['USD', 'UAH', 'GBP', 'CNY'];
+  const [currencyFrom, setCurrencyFrom] = useState('USD');
+  const [currencyTo, setCurrencyTo] = useState('UAH');
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [fromValue, setFromValue] = useState("");
-  const [fromError, setFromError] = useState("");
-  const [toValue, setToValue] = useState("");
-  const [toError, setToError] = useState("");
+  const [fromValue, setFromValue] = useState('');
+  const [fromError, setFromError] = useState('');
+  const [toValue, setToValue] = useState('');
+  const [toError, setToError] = useState('');
   const [exchangeRate, setExchangeRate] = useState(null);
-  const [saveSchemaError, setSaveSchemaError] = useState("");
+  const [saveSchemaError, setSaveSchemaError] = useState('');
   const [conversionHistory, setConversionHistory] = useState([]);
 
-  const maxDate = new Date("2024-11-24");
+  const maxDate = new Date('2024-11-24');
   const minDate = new Date();
   minDate.setDate(maxDate.getDate() - 7);
 
-  const schema = z.string().regex(/^\d*\.?\d*$/, "Введіть лише цифри");
-  const saveSchema = z.string().nonempty("Введіть суму");
+  const schema = z.string().regex(/^\d*\.?\d*$/, 'Введіть лише цифри');
+  const saveSchema = z.string().nonempty('Введіть суму');
 
   const fetchExchangeRate = () => {
     try {
-      const formattedDate = selectedDate.toLocaleDateString("uk-UA");
+      const formattedDate = selectedDate.toLocaleDateString('uk-UA');
       const dailyRates = exchangeRates.find(
         (entry) => entry.date === formattedDate
       );
@@ -43,7 +42,7 @@ const Changer = () => {
 
       let rate;
 
-      if (currencyFrom === "UAH") {
+      if (currencyFrom === 'UAH') {
         const targetRate = dailyRates.exchangeRate.find(
           (r) => r.currency === currencyTo
         );
@@ -55,7 +54,7 @@ const Changer = () => {
           console.error(`Курс UAH к ${currencyTo} не найден.`);
           setExchangeRate(null);
         }
-      } else if (currencyTo === "UAH") {
+      } else if (currencyTo === 'UAH') {
         const targetRate = dailyRates.exchangeRate.find(
           (r) => r.currency === currencyFrom
         );
@@ -87,7 +86,7 @@ const Changer = () => {
         }
       }
     } catch (error) {
-      console.error("Ошибка при обработке данных из JSON:", error);
+      console.error('Ошибка при обработке данных из JSON:', error);
       setExchangeRate(null);
     }
   };
@@ -104,7 +103,7 @@ const Changer = () => {
       const convertedToValue = (parseFloat(fromValue) * exchangeRate).toFixed(
         2
       );
-      setToValue(convertedToValue || "");
+      setToValue(convertedToValue || '');
     }
   }, [exchangeRate]);
 
@@ -137,22 +136,22 @@ const Changer = () => {
 
     try {
       schema.parse(inputValue);
-      setFromError("");
+      setFromError('');
     } catch (err) {
       if (err instanceof z.ZodError) {
         setFromError(err.errors[0].message);
-        setToValue("");
+        setToValue('');
         return;
       }
     }
 
     setFromValue(inputValue);
 
-    if (exchangeRate && inputValue.trim() !== "") {
+    if (exchangeRate && inputValue.trim() !== '') {
       const convertedValue = (parseFloat(inputValue) * exchangeRate).toFixed(2);
-      setToValue(convertedValue || "");
+      setToValue(convertedValue || '');
     } else {
-      setToValue("");
+      setToValue('');
     }
   };
 
@@ -161,22 +160,22 @@ const Changer = () => {
 
     try {
       schema.parse(inputValue);
-      setToError("");
+      setToError('');
     } catch (err) {
       if (err instanceof z.ZodError) {
         setToError(err.errors[0].message);
-        setFromValue("");
+        setFromValue('');
         return;
       }
     }
 
     setToValue(inputValue);
 
-    if (exchangeRate && inputValue.trim() !== "") {
+    if (exchangeRate && inputValue.trim() !== '') {
       const convertedValue = (parseFloat(inputValue) / exchangeRate).toFixed(2);
-      setFromValue(convertedValue || "");
+      setFromValue(convertedValue || '');
     } else {
-      setFromValue("");
+      setFromValue('');
     }
   };
 
@@ -192,9 +191,9 @@ const Changer = () => {
       saveSchema.parse(toValue);
 
       const savedHistory =
-        JSON.parse(localStorage.getItem("conversionHistory")) || [];
+        JSON.parse(localStorage.getItem('conversionHistory')) || [];
       const newRecord = {
-        date: selectedDate.toLocaleDateString("uk-UA"),
+        date: selectedDate.toLocaleDateString('uk-UA'),
         from: `${fromValue} ${currencyFrom}`,
         to: `${toValue} ${currencyTo}`,
       };
@@ -204,8 +203,8 @@ const Changer = () => {
           ? [newRecord, ...savedHistory.slice(0, 9)]
           : [newRecord, ...savedHistory];
 
-      setSaveSchemaError("");
-      localStorage.setItem("conversionHistory", JSON.stringify(updatedHistory));
+      setSaveSchemaError('');
+      localStorage.setItem('conversionHistory', JSON.stringify(updatedHistory));
     } catch (err) {
       if (err instanceof z.ZodError) {
         setSaveSchemaError(err.errors[0].message);
@@ -215,36 +214,36 @@ const Changer = () => {
 
   useEffect(() => {
     const savedHistory =
-      JSON.parse(localStorage.getItem("conversionHistory")) || [];
+      JSON.parse(localStorage.getItem('conversionHistory')) || [];
     setConversionHistory(savedHistory);
   }, [handleDateChange]);
 
   const clearHistory = () => {
-    localStorage.removeItem("conversionHistory");
+    localStorage.removeItem('conversionHistory');
     setConversionHistory([]);
   };
 
   return (
     <div>
-      <div class="flex justify-center items-center py-20 bg-[#F6F7FF]">
-        <div class="bg-white rounded-lg shadow-md py-[55px] px-[65px]  w-[960px] ">
-          <div class="text-left mb-6">
-            <h2 class="text-[40px] leading-[56px] font-bold text-[#1F1E25]">
+      <div className="flex justify-center items-center py-20 bg-[#F6F7FF]">
+        <div className="bg-white rounded-lg shadow-md py-[55px] px-[65px]  w-[960px] ">
+          <div className="text-left mb-6">
+            <h2 className="text-[40px] leading-[56px] font-bold text-[#1F1E25]">
               Конвертер валют
             </h2>
           </div>
 
-          <form class="pt-[70px]">
-            <div class="flex text-left gap-[48px]">
-              <div class="flex flex-col flex-1">
+          <form className="pt-[70px]">
+            <div className="flex text-left gap-[48px]">
+              <div className="flex flex-col flex-1">
                 <label
-                  for="from"
-                  class="text-xl text-[#707C87] font-medium mb-[30px]"
+                  htmlFor="from"
+                  className="text-xl text-[#707C87] font-medium mb-[30px]"
                 >
                   В мене є:
                 </label>
 
-                <div class="flex gap-[15px]">
+                <div className="flex gap-[15px]">
                   <div>
                     <input
                       type="text"
@@ -270,8 +269,8 @@ const Changer = () => {
                           disabled={currency === currencyTo}
                           className={`${
                             currency === currencyTo
-                              ? "text-gray-400 line-through"
-                              : "cursor-pointer"
+                              ? 'text-gray-400 line-through'
+                              : 'cursor-pointer'
                           }`}
                         >
                           {currency}
@@ -303,19 +302,19 @@ const Changer = () => {
                 )}
               </div>
 
-              <div class="flex justify-center items-center pt-[55px]">
-                <img src={arrows} alt="Swap Currencies" class="w-6 h-6" />
+              <div className="flex justify-center items-center pt-[55px]">
+                <img src={arrows} alt="Swap Currencies" className="w-6 h-6" />
               </div>
 
-              <div class="flex flex-col flex-1">
+              <div className="flex flex-col flex-1">
                 <label
-                  for="to"
-                  class="text-xl text-[#707C87] font-medium mb-[30px]"
+                  htmlFor="to"
+                  className="text-xl text-[#707C87] font-medium mb-[30px]"
                 >
                   Я хочу придбати:
                 </label>
 
-                <div class="flex gap-[15px] justify-between w-[355px]">
+                <div className="flex gap-[15px] justify-between w-[355px]">
                   <div>
                     <input
                       type="text"
@@ -341,8 +340,8 @@ const Changer = () => {
                           disabled={currency === currencyFrom}
                           className={`${
                             currency === currencyFrom
-                              ? "text-gray-400 line-through"
-                              : "cursor-pointer"
+                              ? 'text-gray-400 line-through'
+                              : 'cursor-pointer'
                           }`}
                         >
                           {currency}
@@ -389,7 +388,7 @@ const Changer = () => {
                   customInput={
                     <div className="flex items-center justify-between">
                       <div className="text-[#707C87] text-xl mr-16">
-                        {selectedDate.toLocaleDateString("uk-UA")}
+                        {selectedDate.toLocaleDateString('uk-UA')}
                       </div>
                       <img src={calendar} alt="Календар" />
                     </div>
@@ -409,10 +408,10 @@ const Changer = () => {
         </div>
       </div>
 
-      <div class="flex justify-center items-center py-20 bg-[#FFFFFF]">
-        <div class="bg-[#F6F7FF] rounded-lg shadow-md py-[55px] px-[65px] w-[960px] ">
-          <div class="flex justify-between mb-8">
-            <h2 class="text-[28px] leading-[40px] font-medium text-[#1F1E3F]">
+      <div className="flex justify-center items-center py-20 bg-[#FFFFFF]">
+        <div className="bg-[#F6F7FF] rounded-lg shadow-md py-[55px] px-[65px] w-[960px] ">
+          <div className="flex justify-between mb-8">
+            <h2 className="text-[28px] leading-[40px] font-medium text-[#1F1E3F]">
               Історія конвертації
             </h2>
 

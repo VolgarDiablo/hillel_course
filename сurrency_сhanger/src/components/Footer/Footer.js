@@ -1,12 +1,12 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
-import facebook from "../../assets/images/footer/facebook.png";
-import globalcall from "../../assets/images/footer/globalcall.png";
-import hotline from "../../assets/images/footer/hotline.png";
-import insta from "../../assets/images/footer/insta.png";
-import twitter from "../../assets/images/footer/twitter.png";
-import youtube from "../../assets/images/footer/youtube.png";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
+import facebook from '../../assets/images/footer/facebook.png';
+import globalcall from '../../assets/images/footer/globalcall.png';
+import hotline from '../../assets/images/footer/hotline.png';
+import insta from '../../assets/images/footer/insta.png';
+import twitter from '../../assets/images/footer/twitter.png';
+import youtube from '../../assets/images/footer/youtube.png';
 
 const Footer = () => {
   return (

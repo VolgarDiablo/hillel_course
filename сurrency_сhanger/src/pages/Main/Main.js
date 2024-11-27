@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import debitCard from "../../assets/images/main-description-cuurency.jpg";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import debitCard from '../../assets/images/main-description-cuurency.jpg';
 
 const Main = () => {
   return (

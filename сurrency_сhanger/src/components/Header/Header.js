@@ -1,9 +1,9 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
-import login from "../../assets/images/login.svg";
-import bgHeaderTitle from "../../assets/images/bg-header-title.png";
-import debitCard from "../../assets/images/debit-card.png";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
+import login from '../../assets/images/login.svg';
+import bgHeaderTitle from '../../assets/images/bg-header-title.png';
+import debitCard from '../../assets/images/debit-card.png';
 
 const Header = () => {
   return (
@@ -21,8 +21,8 @@ const Header = () => {
                   className={({ isActive }) =>
                     `transition ${
                       isActive
-                        ? "text-[#2C36F2] font-semibold"
-                        : "text-customNavLink"
+                        ? 'text-[#2C36F2] font-semibold'
+                        : 'text-customNavLink'
                     } hover:text-blue-500`
                   }
                 >
@@ -35,8 +35,8 @@ const Header = () => {
                   className={({ isActive }) =>
                     `transition ${
                       isActive
-                        ? "text-[#2C36F2] font-semibold"
-                        : "text-customNavLink"
+                        ? 'text-[#2C36F2] font-semibold'
+                        : 'text-customNavLink'
                     } hover:text-blue-500`
                   }
                 >
@@ -49,8 +49,8 @@ const Header = () => {
                   className={({ isActive }) =>
                     `transition ${
                       isActive
-                        ? "text-[#2C36F2] font-semibold"
-                        : "text-customNavLink"
+                        ? 'text-[#2C36F2] font-semibold'
+                        : 'text-customNavLink'
                     } hover:text-blue-500`
                   }
                 >
@@ -63,8 +63,8 @@ const Header = () => {
                   className={({ isActive }) =>
                     `transition ${
                       isActive
-                        ? "text-[#2C36F2] font-semibold"
-                        : "text-customNavLink"
+                        ? 'text-[#2C36F2] font-semibold'
+                        : 'text-customNavLink'
                     } hover:text-blue-500`
                   }
                 >
@@ -117,9 +117,9 @@ const Header = () => {
           className="absolute top-0 left-0 w-full h-full -z-10"
           style={{
             backgroundImage: `url(${bgHeaderTitle})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
           }}
         ></div>
       </section>
